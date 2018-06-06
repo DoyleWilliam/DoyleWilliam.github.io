@@ -19,6 +19,7 @@ var user_output;
 var m = 1;
 var b = 0;
 var bias = 1;
+var setting_height = 50;
 
 
 
@@ -163,22 +164,22 @@ function draw(){
     fill(0);
     strokeWeight(1);
     stroke(0);
-    text('Settings',(width / 8), (height / 4));
+    text('Settings',(width / 8), (height / 4) + 50 + setting_height);
 
-    text('Training Size: ', (width / 8), (height / 4) + 40);
+    text('Training Size: ', (width / 8), (height / 4) + 90 + setting_height);
     user_training_size.style('font-size', '10px');
-    user_training_size.position((width / 8) + 130, (height / 4) + 25);
+    user_training_size.position((width / 8) + 130, (height / 4) + 75 + setting_height);
 
     //y = mx + b
-    text('Model Function: y = ', (width / 8), (height / 4) + 80);
+    text('Model Function: y = ', (width / 8), (height / 4) + 130 + setting_height);
     user_function_m.style('font-size', '10px');
-    user_function_m.position((width / 8) + 180, (height / 4) + 65);
-    text('x + ', (width / 8) + 315, (height / 4) + 80);
+    user_function_m.position((width / 8) + 180, (height / 4) + 115 + setting_height);
+    text('x + ', (width / 8) + 315, (height / 4) + 130 + setting_height);
     user_function_b.style('font-size', '10px');
-    user_function_b.position((width / 8) + 350, (height / 4) + 65);
+    user_function_b.position((width / 8) + 350, (height / 4) + 115 + setting_height);
 
     //change button
-    settings_button.position((width / 8), (height / 4) + 100);
+    settings_button.position((width / 8), (height / 4) + 150 + setting_height);
     settings_button.mousePressed(setting);
 
     //input
