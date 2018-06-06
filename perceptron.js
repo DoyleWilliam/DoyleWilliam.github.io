@@ -194,6 +194,17 @@ function draw(){
 
     //constant
     c = 1;
+
+    //about
+    text('About: The projected created is a basic neural network that involves a simple', (width / 8) - 50, (height / 8));
+    text('machine learing algorithm called a perceptron. The goal of the perceptron', (width / 8) - 50, (height / 8) + 20);
+    text('is to try to figure out whether a certain point is above or below the line on', (width / 8) - 50, (height / 8) + 40);
+    text('the graph. However the perceptron doesnt actually know where the line is so it', (width / 8) - 50, (height / 8) + 60);
+    text('must learn by looking at training data points. when training the percetron', (width / 8) - 50, (height / 8) + 80);
+    text('knows whether the training point is above or below so it can guess and compare', (width / 8) - 50, (height / 8) + 100);
+    text('the guess to the actual answer and get the error. Then from the error it tunes', (width / 8) - 50, (height / 8) + 120);
+    text('the weights accordingly. The new tuned weights can then be used to process new', (width / 8) - 50, (height / 8) + 140);
+    text('points to determine whether the point is above or below the line.', (width / 8) - 50, (height / 8) + 160);
 }
 
 class Point{
